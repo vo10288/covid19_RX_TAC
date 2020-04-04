@@ -1,0 +1,24 @@
+<html>
+<head><title>Face Detect, Verify and identification</title>
+</head>
+<body style="width:100%;height:100%;" bgcolor="black" text="yellow" background="http://www.broi.it/batman.gif" position="center"> 
+    
+<h5>First upload a picture on the LEFT BUTTON after on the RIGHT BUTTON and see THE VERIFY & IDENTIFICATION !</h5>
+     
+<table width="100%"><tr width="99%"><td width="48%">
+<?php $homepage = file_get_contents('risultato.txt'); echo $homepage; ?>
+    
+<a href="{{ user_image2 }}"><img src="{{ user_image22 }}"  width="65%"></a>
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="file2"  style="font-size:120%;width:40%;height:100%;bgcolor:yellow;color:black;" >
+<input type="submit" value="Upload" style="font-size:120%;width:40%;height:100%;color:black;bgcolor:yellow;" >
+</form>
+</td><td width="48%">
+    
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="file"  style="font-size:120%;width:40%;height:100%;bgcolor:yellow;color:black;" >
+<input type="submit" value="Upload" style="font-size:120%;width:40%;height:100%;color:black;bgcolor:yellow;" >
+</form>
+<td></tr></table>
+</body>
+</html>
